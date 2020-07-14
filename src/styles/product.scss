@@ -19,7 +19,7 @@
 
     &:hover {
       outline: 3px solid #f3f3f3;
-      transform: scale(1.2, 1.2);
+      transform: scale(1.2);
     }
   }
 
@@ -27,7 +27,7 @@
     font-size: $fontSizeDefault;
     font-weight: 500;
     line-height: $fontSizeDefault * 1.25;
-    margin: 35px 0 6px;
+    margin: 33px 0 6px;
   }
 
   &__rating {
