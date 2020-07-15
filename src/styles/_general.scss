@@ -10,11 +10,12 @@ body {
 .catalog-wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, $productCardWidth);
-  grid-template-rows: repeat(2, $productCardHeight);
+  grid-template-columns: repeat(auto-fit, $productCardWidth);
+  grid-template-rows: repeat(auto-fit, $productCardHeight);
   column-gap: $productCardGapX;
   row-gap: $productCardGapY;
-  margin-top: 50px;
+  max-width: $productCardWidth * 4 + $productCardGapX * 3;
+  margin: 50px auto;
 }
 
 @mixin elementContainer {
