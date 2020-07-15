@@ -8,13 +8,13 @@ body {
 }
 
 .catalog-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  height: $productCardHeight * 2 + $productCardGapY;
-  width: $productCardWidth * 4 + $productCardGapX * 3;
-  margin: 50px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, $productCardWidth);
+  grid-template-rows: repeat(2, $productCardHeight);
+  column-gap: $productCardGapX;
+  row-gap: $productCardGapY;
+  margin-top: 50px;
 }
 
 @mixin elementContainer {
